@@ -1,4 +1,4 @@
-name: jd_daily_egg
+name: jd_crazy_joy_coin
 on:
   workflow_dispatch:
   schedule:
