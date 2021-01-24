@@ -31,6 +31,7 @@ jobs:
           npm install
       - name: '运行 【京东汽车兑换】'
         run: |
+          cd ~/scripts
           node jd_car_exchange.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}

@@ -30,6 +30,7 @@ jobs:
           npm install
       - name: '运行 【京东汽车】'
         run: |
+          cd ~/scripts
           node jd_car.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}

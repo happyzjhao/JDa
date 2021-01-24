@@ -27,6 +27,7 @@ jobs:
           npm install
       - name: '运行 【东东小窝脚本】'
         run: |
+          cd ~/scripts
           node jd_small_home.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
