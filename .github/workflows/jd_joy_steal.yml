@@ -24,14 +24,14 @@ jobs:
       - name: npm install
         run: |
           cd ~/Actions/.github
-          wget https://github.com/happyzjhao/JDa/blob/main/.github/deleteEnv.sh
+          wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
           bash deleteEnv.sh
           cd ~/scripts
           npm install
       - name: '运行 【宠汪汪偷好友狗粮与积分】'
         run: |
           cd ~/Actions/.github
-          wget https://github.com/happyzjhao/JDa/blob/main/.github/deleteEnv.sh
+          wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
           bash deleteEnv.sh
           cd ~/scripts
           node jd_joy_steal.js
