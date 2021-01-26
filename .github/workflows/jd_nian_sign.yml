@@ -32,30 +32,30 @@ jobs:
       - name: '运行炸年兽'
         run: |
           cd  ~/scripts
-          unste GITHUB_API_URL
-          unste GITHUB_REPOSITORY_OWNER
-          unste GITHUB_ACTIONS
-          unste GITHUB_HEAD_REF
-          unste GITHUB_ACTOR
-          unste GITHUB_ACTION_REF
-          unste GITHUB_ACTION
-          unste GITHUB_ACTION_REPOSITORY
-          unste GITHUB_RETENTION_DAYS
-          unste GITHUB_ENV
-          unste GITHUB_REF
-          unste GITHUB_SHA
-          unste GITHUB_RUN_ID
-          unste GITHUB_SERVER_URL
-          unste GITHUB_EVENT_PATH
-          unste GITHUB_GRAPHQL_URL
-          unste GITHUB_BASE_REF
-          unste GITHUB_PATH
-          unste GITHUB_JOB
-          unste GITHUB_REPOSITORY
-          unste GITHUB_EVENT_NAME
-          unste GITHUB_RUN_NUMBER
-          unste GITHUB_WORKFLOW
-          unste GITHUB_WORKSPACE
+          unset GITHUB_API_URL
+          unset GITHUB_REPOSITORY_OWNER
+          unset GITHUB_ACTIONS
+          unset GITHUB_HEAD_REF
+          unset GITHUB_ACTOR
+          unset GITHUB_ACTION_REF
+          unset GITHUB_ACTION
+          unset GITHUB_ACTION_REPOSITORY
+          unset GITHUB_RETENTION_DAYS
+          unset GITHUB_ENV
+          unset GITHUB_REF
+          unset GITHUB_SHA
+          unset GITHUB_RUN_ID
+          unset GITHUB_SERVER_URL
+          unset GITHUB_EVENT_PATH
+          unset GITHUB_GRAPHQL_URL
+          unset GITHUB_BASE_REF
+          unset GITHUB_PATH
+          unset GITHUB_JOB
+          unset GITHUB_REPOSITORY
+          unset GITHUB_EVENT_NAME
+          unset GITHUB_RUN_NUMBER
+          unset GITHUB_WORKFLOW
+          unset GITHUB_WORKSPACE
           npm install
           node jd_nian_sign.js
           node jd_nian_ar.js
