@@ -32,7 +32,9 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: '运行炸年兽'
         run: |
-          tree -L 3
+          ls
+          cd ~/Actions
+          ls
           cd ~/Actions/.github
           bash deleteEnv.sh
           cd ~/scripts
