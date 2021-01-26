@@ -25,8 +25,6 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-          npm fund
-          npm run dev
       - name: '运行 【全民开红包脚本】'
         run: |
           cd ~/scripts

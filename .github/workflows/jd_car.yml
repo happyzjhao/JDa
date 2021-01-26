@@ -28,8 +28,6 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-          npm fund
-          npm run dev
       - name: '运行 【京东汽车】'
         run: |
           cd ~/scripts

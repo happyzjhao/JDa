@@ -33,8 +33,6 @@ jobs:
         run: |
           cd  ~/scripts
           npm install
-          npm fund
-          npm run dev
           node jd_nian_sign.js
           node jd_nian_ar.js
           node jd_nh.js

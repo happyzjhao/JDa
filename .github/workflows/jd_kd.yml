@@ -29,8 +29,6 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-          npm fund
-          npm run dev
       - name: '运行 【京东快递】'
         run: |
           cd ~/scripts
