@@ -26,6 +26,7 @@ jobs:
           cd ~/scripts
           npm install
           npm fund
+          npm run dev
       - name: '运行 【宠汪汪偷好友狗粮与积分】'
         run: |
           cd ~/scripts

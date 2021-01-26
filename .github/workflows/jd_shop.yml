@@ -26,6 +26,7 @@ jobs:
           cd ~/scripts
           npm install
           npm fund
+          npm run dev
       - name: '运行 【进店领豆脚本】'
         run: |
           cd ~/scripts
