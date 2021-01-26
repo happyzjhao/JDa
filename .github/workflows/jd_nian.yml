@@ -35,7 +35,6 @@ jobs:
           wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
           bash deleteEnv.sh
           cd ~/scripts
-          unset GITHUB_ACTOR
           npm install
           node jd_nian.js
           node jd_nianCollect.js
