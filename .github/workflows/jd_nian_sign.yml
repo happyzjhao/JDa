@@ -32,7 +32,7 @@ jobs:
       - name: '运行炸年兽'
         run: |
           wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
-          bash deleteEnv.sh
+          source  deleteEnv.sh
           cd ~/scripts
           npm install
           node jd_nian_sign.js

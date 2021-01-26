@@ -33,7 +33,7 @@ jobs:
       - name: '运行炸年兽'
         run: |
           wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
-          bash deleteEnv.sh
+          source  deleteEnv.sh
           unset GITHUB_API_URL
           unset GITHUB_REPOSITORY_OWNER
           unset GITHUB_ACTIONS

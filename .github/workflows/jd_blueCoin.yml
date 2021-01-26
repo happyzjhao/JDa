@@ -25,14 +25,14 @@ jobs:
         run: |
 
           wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
-          bash deleteEnv.sh
+          source  deleteEnv.sh
           cd ~/scripts
           npm install
       - name: '运行 【京小超兑换奖品】'
         run: |
 
           wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
-          bash deleteEnv.sh
+          source  deleteEnv.sh
           cd ~/scripts
           node jd_blueCoin.js
         env:

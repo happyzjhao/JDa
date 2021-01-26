@@ -25,14 +25,14 @@ jobs:
         run: |
 
           wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
-          bash deleteEnv.sh
+          source  deleteEnv.sh
           cd ~/scripts
           npm install
       - name: '运行 【宠汪汪】'
         run: |
 
           wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
-          bash deleteEnv.sh
+          source  deleteEnv.sh
           cd ~/scripts
           node jd_joy.js
         env:
