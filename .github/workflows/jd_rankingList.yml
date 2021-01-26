@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone -b master https://gitlab.com/MrRight/Scripts.git ~/scripts
+          git clone -b master https://gitlab.com/happyzjhao/jd_scripts.git ~/scripts
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -23,10 +23,14 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: npm install
         run: |
+          cd ~/Actions/.github
+          bash deleteEnv.sh
           cd ~/scripts
           npm install
       - name: '运行 【京东排行榜】'
         run: |
+          cd ~/Actions/.github
+          bash deleteEnv.sh
           cd ~/scripts
           node jd_rankingList.js
         env:
