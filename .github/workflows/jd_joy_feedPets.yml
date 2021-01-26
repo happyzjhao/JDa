@@ -24,12 +24,14 @@ jobs:
       - name: npm install
         run: |
           cd ~/Actions/.github
+          wget https://github.com/happyzjhao/JDa/blob/main/.github/deleteEnv.sh
           bash deleteEnv.sh
           cd ~/scripts
           npm install
       - name: '运行 【宠汪汪喂食脚本】'
         run: |
           cd ~/Actions/.github
+          wget https://github.com/happyzjhao/JDa/blob/main/.github/deleteEnv.sh
           bash deleteEnv.sh
           cd ~/scripts
           node jd_joy_feedPets.js
