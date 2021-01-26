@@ -25,6 +25,7 @@ jobs:
         run: |
           cd ~/scripts
           npm install
+          npm fund
       - name: '运行 【宠汪汪】'
         run: |
           cd ~/scripts

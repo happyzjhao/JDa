@@ -29,6 +29,7 @@ jobs:
         run: |
           cd ~/scripts
           npm install
+          npm fund
       - name: '运行 【疯狂的joy】'
         run: |
           cd ~/scripts

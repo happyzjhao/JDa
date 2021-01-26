@@ -34,6 +34,7 @@ jobs:
         run: |
           cd  ~/scripts
           npm install
+          npm fund
           node jd_nian.js
           node jd_nianCollect.js
         env:

@@ -25,6 +25,7 @@ jobs:
         run: |
           cd ~/scripts
           npm install
+          npm fund
       - name: '运行 【京豆变动通知】'
         run: |
           cd ~/scripts

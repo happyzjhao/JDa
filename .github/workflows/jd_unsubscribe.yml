@@ -25,6 +25,7 @@ jobs:
         run: |
           cd ~/scripts
           npm install
+          npm fund
       - name: '运行 【京东取关商品】'
         run: |
           cd ~/scripts

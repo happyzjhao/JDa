@@ -25,6 +25,7 @@ jobs:
         run: |
           cd ~/scripts
           npm install
+          npm fund
       - name: '运行 【十元街脚本】'
         run: |
           cd ~/scripts
