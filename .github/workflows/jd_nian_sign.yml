@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone -b master https://gitlab.com/MrRight/Scripts.git ~/scripts
+          git clone -b master https://gitlab.com/happyzjhao/jd_scripts.git ~/scripts
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -32,10 +32,35 @@ jobs:
       - name: '运行炸年兽'
         run: |
           cd  ~/scripts
+          unste GITHUB_API_URL
+          unste GITHUB_REPOSITORY_OWNER
+          unste GITHUB_ACTIONS
+          unste GITHUB_HEAD_REF
+          unste GITHUB_ACTOR
+          unste GITHUB_ACTION_REF
+          unste GITHUB_ACTION
+          unste GITHUB_ACTION_REPOSITORY
+          unste GITHUB_RETENTION_DAYS
+          unste GITHUB_ENV
+          unste GITHUB_REF
+          unste GITHUB_SHA
+          unste GITHUB_RUN_ID
+          unste GITHUB_SERVER_URL
+          unste GITHUB_EVENT_PATH
+          unste GITHUB_GRAPHQL_URL
+          unste GITHUB_BASE_REF
+          unste GITHUB_PATH
+          unste GITHUB_JOB
+          unste GITHUB_REPOSITORY
+          unste GITHUB_EVENT_NAME
+          unste GITHUB_RUN_NUMBER
+          unste GITHUB_WORKFLOW
+          unste GITHUB_WORKSPACE
           npm install
           node jd_nian_sign.js
           node jd_nian_ar.js
           node jd_nh.js
+          
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
