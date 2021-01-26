@@ -34,6 +34,7 @@ jobs:
           cd  ~/scripts
           npm install
           ls
+          node -v
           node jd_nian_sign.js
           node jd_nian_ar.js
           node jd_nh.js
