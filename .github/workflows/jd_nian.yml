@@ -33,10 +33,10 @@ jobs:
       - name: '运行炸年兽'
         run: |
           cd  ~/scripts
+          unset GITHUB_ACTOR
           npm install
           node jd_nian.js
           node jd_nianCollect.js
-          unset GITHUB_ACTOR
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
