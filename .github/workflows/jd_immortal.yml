@@ -1,4 +1,4 @@
-name: jd_nian_sign 炸年兽签到
+name: jd_immortal 神仙书院
 
 on:
   push:
@@ -29,7 +29,7 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
-      - name: '运行炸年兽'
+      - name: '运行神仙书院'
         run: |
           wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
           source  deleteEnv.sh
