@@ -1,15 +1,14 @@
-
-name: jd_nian 炸年兽
+name: jd_nian_sign 炸年兽签到
 
 on:
-  #push:
+  push:
   workflow_dispatch:
   schedule:
-    - cron: '0 */1 * * *' #此处为UTC-0时间
+    - cron: '20 0 * * *' #此处为UTC-0时间
   watch:
     types: started
   repository_dispatch:
-    types: jd_nian
+    types: jd_immortal
 jobs:
   build:
 
@@ -36,8 +35,8 @@ jobs:
           source  deleteEnv.sh
           cd ~/scripts
           npm install
-          node jd_nian.js
-          node jd_nianCollect.js
+          node jd_immortal.js
+          
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -50,3 +49,4 @@ jobs:
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_IMMORTAL_LATLON: ${{ secrets.JD_IMMORTAL_LATLON }}
