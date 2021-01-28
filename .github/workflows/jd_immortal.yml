@@ -34,8 +34,8 @@ jobs:
           wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
           source  deleteEnv.sh
           cd ~/scripts
-          rm jd_immortal_answer.js
-          wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/jd_immortal_answer.js
+          #rm jd_immortal_answer.js
+          #wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/jd_immortal_answer.js
           npm install
           node jd_immortal.js
           node jd_immortal_answer.js
