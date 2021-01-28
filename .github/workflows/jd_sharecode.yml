@@ -22,7 +22,7 @@ jobs:
           cd ~/Actions/.github/scripts
           chmod +x jd_sharecodes.sh
           ./jd_sharecodes.sh
-          git clone -b master https://gitlab.com/happyzjhao/jd_scripts.git ~/scripts
+          git clone -b master https://gitlab.com/happyzjhao/jd-scripts-gitee.git ~/scripts
           wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
           source  deleteEnv.sh
           cd  ~/scripts
