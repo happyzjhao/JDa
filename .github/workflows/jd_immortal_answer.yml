@@ -1,10 +1,10 @@
-name: jd_immortal 神仙书院
+name: jd_immortal 神仙书院答题
 
 on:
   #push:
   workflow_dispatch:
   schedule:
-    - cron: '0 0,10 * * *' #此处为UTC-0时间
+    - cron: '20 0/4 * * *' #此处为UTC-0时间
   # watch:
   #   types: started
   repository_dispatch:
@@ -29,15 +29,13 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
-      - name: '运行神仙书院'
+      - name: '运行神仙书院答题'
         run: |
           wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/deleteEnv.sh
           source  deleteEnv.sh
           cd ~/scripts
-          #rm jd_immortal_answer.js
-          #wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/jd_immortal_answer.js
           npm install
-          node jd_immortal.js          
+          node jd_immortal_answer.js      
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
