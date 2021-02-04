@@ -26,6 +26,7 @@ jobs:
       - name: npm install
         run: |
           cd ~/scripts
+          wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/notify.js
           npm install
       - name: '运行 【京豆变动通知】'
         run: |
@@ -34,7 +35,8 @@ jobs:
           source  deleteEnv.sh
           cd ~/scripts
           node jd_bean_change.js
-        env:
+          node notify.js
+          
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
