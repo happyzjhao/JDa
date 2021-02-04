@@ -26,7 +26,7 @@ jobs:
       - name: npm install
         run: |
           cd ~/scripts
-          wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/notify.js
+          wget https://raw.githubusercontent.com/happyzjhao/JDa/main/.github/notifys.js
           npm install
       - name: '运行 【京豆变动通知】'
         run: |
