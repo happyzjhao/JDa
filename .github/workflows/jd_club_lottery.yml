@@ -1,6 +1,8 @@
 name: jd_club_lottery
 on:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '0 16 * * *'
 jobs:

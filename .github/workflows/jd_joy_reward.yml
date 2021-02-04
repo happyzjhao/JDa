@@ -1,6 +1,8 @@
 name: jd_joy_reward
 on:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '0 0-16/8 * * *'
 jobs:

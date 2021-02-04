@@ -1,6 +1,8 @@
 name: jd_speed
 on:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '33 */3 * * *'
 jobs:

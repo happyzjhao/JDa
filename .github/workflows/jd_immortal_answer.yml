@@ -3,6 +3,8 @@ name: jd_immortal 神仙书院答题
 on:
   #push:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '20 0/4 * * *' #此处为UTC-0时间
   # watch:

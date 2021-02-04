@@ -1,6 +1,8 @@
 name: jd_joy_feedPets
 on:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '*/20 * * * *'
 jobs:

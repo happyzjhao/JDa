@@ -1,6 +1,8 @@
 name: jd_sgmh 【闪购盲盒】
 on:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '20 0 * * *'
   # watch:

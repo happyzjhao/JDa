@@ -1,6 +1,8 @@
 name: jd_rankingList
 on:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '11 1 * * *'
 jobs:

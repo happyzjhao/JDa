@@ -1,6 +1,8 @@
 name: jd_lotteryMachine
 on:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '11 17 * * *'
 jobs:

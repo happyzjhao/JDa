@@ -1,6 +1,8 @@
 name: jd_bean_change 【京豆变动通知】
 on:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '0 2 * * *'
 jobs:

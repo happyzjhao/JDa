@@ -4,6 +4,8 @@ name: jd_newYearMoney_lottery 京东压岁钱
 on:
   #push:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '10 0,4 * * *' #此处为UTC-0时间
   # watch:

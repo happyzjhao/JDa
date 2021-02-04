@@ -1,10 +1,11 @@
 name: jd_crazy_joy
 on:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '0 2 * * *'
-  watch:	
-    types: started	
+
 
 jobs:
   build:

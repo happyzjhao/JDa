@@ -1,6 +1,8 @@
 name: jd_necklace
 on:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '10 16,12 * * *'
 jobs:

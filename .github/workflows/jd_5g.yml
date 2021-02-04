@@ -4,6 +4,8 @@ name: jd_5g 5G狂欢城
 on:
   #push:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '0 0,6,12,16 * * *' #此处为UTC-0时间
   # watch:

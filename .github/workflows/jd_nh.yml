@@ -4,6 +4,8 @@ name: jd_nh 京东年货节
 on:
   #push:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '1 23 * * *' #此处为UTC-0时间
   # watch:

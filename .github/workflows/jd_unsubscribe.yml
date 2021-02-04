@@ -1,5 +1,7 @@
 name: jd_unsubscribe
 on:
+  watch:	
+    types: started  
   schedule:
     - cron: '45 15 * * *'
   workflow_dispatch:

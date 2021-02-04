@@ -2,7 +2,7 @@ name: jd_car
 on:
   workflow_dispatch:
   watch:	
-    types: started	
+    types: started  
   schedule:
     - cron: '0 0 * * *'
 jobs:

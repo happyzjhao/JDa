@@ -4,6 +4,8 @@ name: jd_cash 签到领现金
 on:
   #push:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '2 16 * * *' #此处为UTC-0时间
   # watch:

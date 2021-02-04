@@ -3,6 +3,8 @@ name: 京豆兑换
 on:
   #push:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '0,10 15,16 * * *'
   # watch:

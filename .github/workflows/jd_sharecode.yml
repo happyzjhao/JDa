@@ -3,6 +3,8 @@ name: 打印互助码&互助码自动上车
 on:
   #push:
   workflow_dispatch:
+  watch:	
+    types: started  
   schedule:
     - cron: '20 18 * * *'
   # watch:

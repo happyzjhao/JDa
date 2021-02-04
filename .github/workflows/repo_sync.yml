@@ -1,5 +1,7 @@
 name: sync-zdrka-yml
 on:
+  watch:	
+    types: started  
   schedule:
     - cron: '0 0-16/4 * * *'
   workflow_dispatch:
