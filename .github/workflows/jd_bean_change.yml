@@ -35,7 +35,7 @@ jobs:
           source  deleteEnv.sh
           cd ~/scripts
           node jd_bean_change.js
-          node notify.js
+          node notifys.js
           
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
