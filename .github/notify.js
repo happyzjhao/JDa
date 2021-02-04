@@ -1,2 +1,3 @@
-
-await require('./sendNotify').sendNotify('提醒', process.env.JD_COOKIE)
+!(async () => {
+    await require('./sendNotify').sendNotify('提醒', process.env.JD_COOKIE)
+})()
